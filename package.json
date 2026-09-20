@@ -1,0 +1,34 @@
+{
+  "name": "dsh-workspace-groups",
+  "description": "Grouped workspace tree for the DSH web sidebar (replaces dsh-better-workspace as the sidebar.workspaces browser): name groups, assign workspaces, search sessions. Persisted host-side in the dsh-data volume. Built for dsh >=0.1.5-rc.1; the client requires ONLY react (no closed-source client-runtime).",
+  "version": "0.2.4",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}
