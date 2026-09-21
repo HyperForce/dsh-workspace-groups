@@ -1,7 +1,7 @@
 {
   "name": "dsh-workspace-groups",
   "description": "Grouped workspace tree for the DSH web sidebar (replaces dsh-better-workspace as the sidebar.workspaces browser): name groups, assign workspaces, search sessions. Persisted host-side in the dsh-data volume. Built for dsh >=0.1.5-rc.1; the client requires ONLY react (no closed-source client-runtime).",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
